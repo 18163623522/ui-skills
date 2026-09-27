@@ -27,7 +27,7 @@ describe("route boundaries", () => {
     } as never);
     const body = await response.text();
 
-    assert.equal(collections.length, 14);
+    assert.equal(collections.length, 15);
     for (const collection of collections) {
       assert.match(
         body,

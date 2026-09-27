@@ -4129,6 +4129,65 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["frontend", "craft", "visual"],
     description: "Usage rules and conventions for building interfaces with daisyUI 5.",
   },
+  {
+    slug: "product-film",
+    user: "Rieranthony",
+    repo: "product-film-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/Rieranthony/product-film-skill/main/plugins/product-film/skills/product-film/SKILL.md",
+    githubUrl:
+      "https://github.com/Rieranthony/product-film-skill/blob/main/plugins/product-film/skills/product-film/SKILL.md",
+    name: "product-film",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Make a showreel-grade product film in code with Remotion, synced to music, using the product design system, components, and voice.",
+  },
+  {
+    slug: "motion-ad",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/motion-ad/raw",
+    githubUrl: "https://www.danny.md/skills/motion-ad",
+    name: "motion-ad",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Produce short motion-graphics video ads for any product as rendered MP4s, with GSAP-driven HTML beats and frame-by-frame capture.",
+  },
+  {
+    slug: "explore-design",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/explore-design/raw",
+    githubUrl: "https://www.danny.md/skills/explore-design",
+    name: "explore-design",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      "Generate a single self-contained HTML file with several distinct visual directions side by side so the user can pick a direction.",
+  },
+  {
+    slug: "screenshot",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/screenshot/raw",
+    githubUrl: "https://www.danny.md/skills/screenshot",
+    name: "screenshot",
+    topics: ["tooling", "frontend", "visual"],
+    description:
+      "Capture a screenshot of any rendered web page in headless Chrome — full page, viewport, section, or element — for review and motion pipelines.",
+  },
+  {
+    slug: "3dicon",
+    user: "samyost1",
+    repo: "3dicon",
+    rawUrl:
+      "https://raw.githubusercontent.com/samyost1/3dicon/main/skills/3dicon/SKILL.md",
+    githubUrl:
+      "https://github.com/samyost1/3dicon/blob/main/skills/3dicon/SKILL.md",
+    name: "3dicon",
+    topics: ["video", "motion", "3d"],
+    description:
+      "Turn a prompt or still image into a looping animated icon with real transparency, output as animated WebP.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {

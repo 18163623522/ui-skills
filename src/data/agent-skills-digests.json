@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-26T08:59:03.022Z",
-  "skillCount": 315,
+  "generatedAt": "2026-09-27T08:10:18.204Z",
+  "skillCount": 320,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -117,7 +117,7 @@
     "leonxlnx/redesign-skill": "sha256:98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9",
     "pbakaus/clarify": "sha256:4738e125835bd6c166aec2622977c9bc59bada52aaeb186585ed38b3900860b5",
     "pbakaus/bolder": "sha256:a4e4d986f74ef5f3c8218dfcfd5b04fe103b47182cf1e16aeb979e5703d5cd87",
-    "rams/rams": "sha256:12aeb56cc4d20daaaeb8f467f4866e484098b8a0da329572ef947260a54279ea",
+    "rams/rams": "sha256:44bf4d84275b1bf5a34064fd1c6d6afbab852b5946d6d9030313f7905ea6d2fc",
     "pbakaus/colorize": "sha256:dcc0c3ebb76bd22c543f45d73c283e3890e5b8a44eb5053ca2f7fdd425635c32",
     "pbakaus/critique": "sha256:8d2cdf4f583a0caf7685620069069354b4fb81582fb63c349783298454140a0e",
     "pbakaus/harden": "sha256:6674a6fc1eb681f2ad266dc0a3a71cec29dc4dcd3a1ff91195d2302582fa7c58",
@@ -288,12 +288,12 @@
     "humanlayer/show-me": "sha256:434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100",
     "joe-bell/apple-web-app": "sha256:b0366697185d1f33ac4f04c8489f88229773f2b36aa71a52a01558a5f0becf34",
     "larashero3-dotcom/lieflat-charts": "sha256:1d58a31343b0f38fed16a44a65fd2fac0588ca98ffc9e43b20263d886f3ee9ce",
-    "coldteadotai/pr-lens": "sha256:0327fcd0563f6548aedf24b44a6212c855094ecf63434cc0512b4ba0906c5228",
+    "coldteadotai/pr-lens": "sha256:000c8a141be68b8f13402b1e04cceae3bf6e43d327db9f3623d1560f2c6d7fda",
     "s0xdk/refactoring-ui": "sha256:2e3a4aa0b5d5fc35d7c81ca1120564a229a0ad323d21e44b4b6a3d77614446c1",
     "sidkh/term-radar": "sha256:d48d443259cabf15e1617c7640bf77be19c0443c0af6d38c1ac383a7429208ba",
     "humanlayer/design-control-loop": "sha256:4e31d397362b23a88c7bd027cc5935fb3e5aa24eb0a5f934be0967f8974fc080",
     "humanlayer/build-iterated-agentic-loop": "sha256:dea5c29e2cb6133896b0bb518775e18863df377ebe0198f8d867e28e52155671",
-    "coldteadotai/agent-skill": "sha256:0327fcd0563f6548aedf24b44a6212c855094ecf63434cc0512b4ba0906c5228",
+    "coldteadotai/agent-skill": "sha256:000c8a141be68b8f13402b1e04cceae3bf6e43d327db9f3623d1560f2c6d7fda",
     "humanlayer/improve-claude-md": "sha256:dbc3019c52f2409c031c4261664381c338d206b53ed700120743e374a87a9b8c",
     "kitlangton/code-walkthrough": "sha256:eadd4b5c44d62368ad05a91d0d0c9659a8ea8e1aba06b30704c67e0be50bd256",
     "humanlayer/narrow-react-prop-types": "sha256:bfcea79a20074a9178c6aa21c34629951d9646ea381e8be4c83a0a136e3aa288",
@@ -316,6 +316,11 @@
     "saadeghi/daisyui-colors": "sha256:655e2eef74d8f1f6f517044d58fd7115c4384687148a99073ff179da7f1b482f",
     "saadeghi/daisyui-install": "sha256:c5fc3f4e97a62eaca1e215bef6149b5fc1f0fbb875a755ed57865c145192ca5b",
     "saadeghi/daisyui-config": "sha256:1097716fa7385259ab53d2fb7f50e7c548d0362457fbd0b93d8a39050b91d0a5",
-    "saadeghi/daisyui-usage": "sha256:9a0cb9e36d263c67c0442cbd2bf3c2fcc36d327d9fac6bbf883615f402b7cca9"
+    "saadeghi/daisyui-usage": "sha256:9a0cb9e36d263c67c0442cbd2bf3c2fcc36d327d9fac6bbf883615f402b7cca9",
+    "rieranthony/product-film": "sha256:65825fbc4bdfbf9861c0a077028032876b5324b1515fee00c4791c37297e9292",
+    "samyost1/3dicon": "sha256:65d6946516477b73d98c12e50b94b75a5a82e5f51cd549e48e6c705c7caa4e4e",
+    "danny/motion-ad": "sha256:fdca2b2b817c4149d1ce36208152bc9cdb33280ea7473c9a6b7f49cf7234ef8c",
+    "danny/explore-design": "sha256:53cbd583b0978b542211e1882fd22a1bb3edbdaddad98058c305ee797a6a0896",
+    "danny/screenshot": "sha256:c2cf269e897123af2c5199622778d1ee733ab06c9a171e1939f07af827e56c1a"
   }
 }

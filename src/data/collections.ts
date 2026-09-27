@@ -20,6 +20,91 @@ export type Collection = {
 
 export const collections: Collection[] = [
   {
+    slug: "video-skills",
+    title: "Video Skills",
+    keyword: "video skills",
+    seoTitle:
+      "Video skills for product films, motion ads, and launch videos | UI Skills",
+    cardDescription:
+      "Ship product films, social motion ads, launch loops, and animated assets with agent skills for Remotion, GSAP, and generative video.",
+    metaDescription:
+      "Curated video skills for design engineers and frontend teams: product films with Remotion, motion-graphics ads, launch videos, Lottie, scroll-scrub cinematics, and transparent icon loops.",
+    intro:
+      "Use video skills when you need more than static UI — product launch films, paid social motion ads, demo reels, Lottie motion, scroll-driven cinematics, and short shareable cuts. These skills cover story beats, capture pipelines, music sync, and render-ready output.",
+    playbook: [
+      "use-structural-skeletons",
+      "use-ease-out-on-enter",
+      "stagger-infrequent-entrances",
+      "keep-exits-subtle",
+      "use-interruptible-transitions",
+      "restrain-high-frequency-motion",
+    ],
+    skills: [
+      {
+        slug: "product-film",
+        pathSlug: "rieranthony/product-film",
+        role: "Build showreel-grade product films in Remotion from the real design system.",
+      },
+      {
+        slug: "motion-ad",
+        pathSlug: "danny/motion-ad",
+        role: "Render short motion-graphics ads for social as MP4 from GSAP timelines.",
+      },
+      {
+        slug: "remotion-best-practices",
+        pathSlug: "remotion-dev/remotion-best-practices",
+        role: "Apply Remotion patterns for React-based video composition.",
+      },
+      {
+        slug: "brag",
+        pathSlug: "latent-spaces/brag",
+        role: "Turn a shipped project into a launch video with motion and music.",
+      },
+      {
+        slug: "brag-slim",
+        pathSlug: "latent-spaces/brag-slim",
+        role: "Produce a lightweight launch cut without bundled asset dependencies.",
+      },
+      {
+        slug: "3dicon",
+        pathSlug: "samyost1/3dicon",
+        role: "Animate icons into transparent looping WebP assets.",
+      },
+      {
+        slug: "text-to-lottie",
+        pathSlug: "diffusionstudio/text-to-lottie",
+        role: "Generate polished Lottie motion from text prompts.",
+      },
+      {
+        slug: "scroll-world",
+        pathSlug: "oso95/scroll-world",
+        role: "Build scroll-scrubbed cinematic landing experiences with generated scenes.",
+      },
+      {
+        slug: "video-interaction-mapper",
+        pathSlug: "figma/video-interaction-mapper",
+        role: "Map interaction intent from reference video into implementable motion.",
+      },
+      {
+        slug: "screenshot",
+        pathSlug: "danny/screenshot",
+        role: "Capture UI frames from live pages for review and compositing.",
+      },
+    ],
+    agentCapabilities: [
+      "Plan product films and social cuts with clear story beats and brand constraints.",
+      "Render motion ads and launch videos with repeatable capture and export pipelines.",
+      "Compose Remotion timelines synced to music and real product components.",
+      "Generate Lottie, scroll-scrub, and looping icon motion for marketing surfaces.",
+    ],
+    relatedSlugs: [
+      "landing-page-design",
+      "ai-generated-ui",
+      "visual-hierarchy",
+      "website-layout",
+    ],
+  },
+  {
     slug: "mobile-app-design",
     title: "Mobile App Design",
     keyword: "mobile app design",
