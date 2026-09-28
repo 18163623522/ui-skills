@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-28T08:16:19.230Z",
-  "skillCount": 330,
+  "generatedAt": "2026-09-28T08:28:33.539Z",
+  "skillCount": 331,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -331,6 +331,7 @@
     "remotion-dev/remotion-create": "sha256:e7131b653063a1e43164c48a12ba39d2a72e97d3168613da65df2af42b42e4aa",
     "vincentwei1021/video-shotcraft": "sha256:12696ad78212f9036cbb76bd46be305094686db64d9cf72f69a6e650eba3ebbc",
     "remotion-dev/remotion-captions": "sha256:fc6cd302143a1d18bb3c3fa82317a078f43eed88e51b4307ad8250eb5adafb03",
-    "memex-lab/product-launch-video": "sha256:7608467709e563fe201ae9e4f4e32d7515c9605b91510dc8baaefccb5f16ee85"
+    "memex-lab/product-launch-video": "sha256:7608467709e563fe201ae9e4f4e32d7515c9605b91510dc8baaefccb5f16ee85",
+    "moguzbulbul/blueprint-animation": "sha256:ab70b1e9020b830c71179085bd555ef5b2942cfda26e50b185d30b9ad9a6ac41"
   }
 }

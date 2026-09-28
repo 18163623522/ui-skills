@@ -529,6 +529,11 @@ export const collections: Collection[] = [
         role: "Build showreel-grade product films in Remotion from the real design system.",
       },
       {
+        slug: "blueprint-animation",
+        pathSlug: "moguzbulbul/blueprint-animation",
+        role: "Animate a single screen to explain UX decisions step by step for case studies.",
+      },
+      {
         slug: "motion-ad",
         pathSlug: "danny/motion-ad",
         role: "Render short motion-graphics ads for social as MP4 from GSAP timelines.",

@@ -4316,6 +4316,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create cinematic product videos from shot recipe cards with Remotion, page screenshots, 2.5D camera moves, and beat-synced cuts.",
   },
+  {
+    slug: "blueprint-animation",
+    user: "moguzbulbul",
+    repo: "blueprint-animation",
+    rawUrl:
+      "https://raw.githubusercontent.com/moguzbulbul/blueprint-animation/main/SKILL.md",
+    githubUrl:
+      "https://github.com/moguzbulbul/blueprint-animation/blob/main/SKILL.md",
+    name: "blueprint-animation",
+    topics: ["video", "motion", "visual"],
+    description:
+      "Blueprint animation that explains UX decisions step by step for case studies and posts, with Explain or Redesign modes on a single continuous screen.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
