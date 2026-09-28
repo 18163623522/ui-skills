@@ -6,6 +6,7 @@ import { playbook } from "../data/playbook";
 import Footer from "../ui/footer.astro";
 import { CommandDialog } from "../ui/command-dialog";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { PromoBanner } from "../ui/promo-banner";
 import { WebMcpTools } from "../ui/webmcp-tools";
 import { serializeJsonLd } from "../lib/serialize-json-ld";
 import { githubStars } from "../data/github-stars";
@@ -118,6 +119,13 @@ const commandItems = [
     <meta name="twitter:image" content={twitterImageUrl} />
     <meta name="twitter:image:alt" content={twitterImageAltText} />
     <meta name="twitter:site" content={twitterSiteHandle} />
+    <script is:inline>
+      try {
+        if (localStorage.getItem("ui-skills-promo-dismissed") === "1") {
+          document.documentElement.dataset.promoDismissed = "1";
+        }
+      } catch (e) {}
+    </script>
     <script is:inline>
       (function () {
         function shouldSkipAnalytics() {
@@ -244,6 +252,7 @@ const commandItems = [
       {showNewsletter && <div class="container-3xl mt-10"><CtaSection /></div>}
       {showFooter && <Footer />}
     </div>
+    <PromoBanner client:load />
   </body>
 </html>
 

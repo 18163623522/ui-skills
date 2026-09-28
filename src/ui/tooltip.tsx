@@ -5,6 +5,7 @@ type TooltipProps = {
   content: ReactNode;
   children: ReactElement;
   side?: "top" | "bottom" | "left" | "right";
+  closeOnClick?: boolean;
 };
 
 export function TooltipProvider({ children }: { children: ReactNode }) {
@@ -15,13 +16,18 @@ export function TooltipProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function Tooltip({ content, children, side = "bottom" }: TooltipProps) {
+export function Tooltip({
+  content,
+  children,
+  side = "bottom",
+  closeOnClick = true,
+}: TooltipProps) {
   return (
     <TooltipPrimitive.Root>
-      <TooltipPrimitive.Trigger delay={0} render={children} />
+      <TooltipPrimitive.Trigger delay={0} closeOnClick={closeOnClick} render={children} />
       <TooltipPrimitive.Portal>
-        <TooltipPrimitive.Positioner side={side} sideOffset={6}>
-          <TooltipPrimitive.Popup className="type-body-sm z-50 rounded-md border-0 bg-fill-inverse px-2 py-1 font-normal text-content-inverse shadow-none">
+        <TooltipPrimitive.Positioner className="z-50" side={side} sideOffset={6}>
+          <TooltipPrimitive.Popup className="type-body-sm rounded-md border-0 bg-fill-inverse px-2 py-1 font-normal text-content-inverse shadow-none">
             {content}
           </TooltipPrimitive.Popup>
         </TooltipPrimitive.Positioner>
