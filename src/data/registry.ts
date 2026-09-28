@@ -4188,6 +4188,134 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Turn a prompt or still image into a looping animated icon with real transparency, output as animated WebP.",
   },
+  {
+    slug: "hyperframes",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/hyperframes/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md",
+    name: "hyperframes",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Entry point for creating, editing, animating, or rendering video and motion graphics with HyperFrames HTML compositions.",
+  },
+  {
+    slug: "hyperframes-core",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/hyperframes-core/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-core/SKILL.md",
+    name: "hyperframes-core",
+    topics: ["video", "systems", "frontend"],
+    description:
+      "HyperFrames composition contract: timing attributes, tracks, sub-compositions, variables, and deterministic render rules.",
+  },
+  {
+    slug: "general-video",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/general-video/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/general-video/SKILL.md",
+    name: "general-video",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Author custom HyperFrames compositions for multi-scene pieces, reels, montages, and freeform product or brand videos.",
+  },
+  {
+    slug: "motion-graphics",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/motion-graphics/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/motion-graphics/SKILL.md",
+    name: "motion-graphics",
+    topics: ["video", "motion", "visual"],
+    description:
+      "Short design-led motion graphics: kinetic type, stats, charts, logo stings, lower-thirds, and social overlays.",
+  },
+  {
+    slug: "remotion-to-hyperframes",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/remotion-to-hyperframes/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/remotion-to-hyperframes/SKILL.md",
+    name: "remotion-to-hyperframes",
+    topics: ["video", "remotion", "tooling"],
+    description:
+      "Port an existing Remotion React composition source to HyperFrames HTML when explicitly asked to migrate.",
+  },
+  {
+    slug: "product-launch-video",
+    user: "memex-lab",
+    repo: "product-launch-video-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/memex-lab/product-launch-video-skill/main/skills/product-launch-video/SKILL.md",
+    githubUrl:
+      "https://github.com/memex-lab/product-launch-video-skill/blob/main/skills/product-launch-video/SKILL.md",
+    name: "product-launch-video",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Design and build high-impact product launch, promo, and feature announcement videos with Remotion and story-driven motion.",
+  },
+  {
+    slug: "remotion-create",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-create/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-create/SKILL.md",
+    name: "remotion-create",
+    topics: ["video", "remotion", "tooling"],
+    description: "Create a new Remotion video project with official scaffolding and conventions.",
+  },
+  {
+    slug: "remotion-render",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-render/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-render/SKILL.md",
+    name: "remotion-render",
+    topics: ["video", "remotion", "tooling"],
+    description: "Export and render a Remotion composition to video with the official render workflow.",
+  },
+  {
+    slug: "remotion-captions",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-captions/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-captions/SKILL.md",
+    name: "remotion-captions",
+    topics: ["video", "remotion", "accessibility"],
+    description:
+      "Transcribe, display, and animate captions in Remotion compositions.",
+  },
+  {
+    slug: "video-shotcraft",
+    user: "Vincentwei1021",
+    repo: "video-shotcraft",
+    rawUrl:
+      "https://raw.githubusercontent.com/Vincentwei1021/video-shotcraft/main/SKILL.md",
+    githubUrl:
+      "https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md",
+    name: "video-shotcraft",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Create cinematic product videos from shot recipe cards with Remotion, page screenshots, 2.5D camera moves, and beat-synced cuts.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {

@@ -26,11 +26,11 @@ export const collections: Collection[] = [
     seoTitle:
       "Video skills for product films, motion ads, and launch videos | UI Skills",
     cardDescription:
-      "Ship product films, social motion ads, launch loops, and animated assets with agent skills for Remotion, GSAP, and generative video.",
+      "Ship product films, HyperFrames motion graphics, Remotion launch videos, social ads, and cinematic shotcraft with curated agent skills.",
     metaDescription:
-      "Curated video skills for design engineers and frontend teams: product films with Remotion, motion-graphics ads, launch videos, Lottie, scroll-scrub cinematics, and transparent icon loops.",
+      "Curated video skills for product launch films, HyperFrames HTML-to-MP4 pipelines, Remotion composition and render, motion-graphics overlays, brag launch cuts, shotcraft promos, Lottie, and scroll-scrub cinematics.",
     intro:
-      "Use video skills when you need more than static UI — product launch films, paid social motion ads, demo reels, Lottie motion, scroll-driven cinematics, and short shareable cuts. These skills cover story beats, capture pipelines, music sync, and render-ready output.",
+      "Use video skills when you need more than static UI — HyperFrames and Remotion pipelines, product launch films, paid social motion ads, shot-recipe cinematics, demo reels, Lottie motion, and short shareable cuts. These skills cover story beats, capture, porting between stacks, and render-ready output.",
     playbook: [
       "use-structural-skeletons",
       "use-ease-out-on-enter",
@@ -40,6 +40,21 @@ export const collections: Collection[] = [
       "restrain-high-frequency-motion",
     ],
     skills: [
+      {
+        slug: "hyperframes",
+        pathSlug: "heygen-com/hyperframes",
+        role: "Start HyperFrames workflows for HTML/GSAP compositions rendered to MP4.",
+      },
+      {
+        slug: "video-shotcraft",
+        pathSlug: "vincentwei1021/video-shotcraft",
+        role: "Build cinematic product videos from shot cards and real UI captures.",
+      },
+      {
+        slug: "product-launch-video",
+        pathSlug: "memex-lab/product-launch-video",
+        role: "Storyboard and build spectacular Remotion launch and promo films.",
+      },
       {
         slug: "product-film",
         pathSlug: "rieranthony/product-film",
@@ -51,9 +66,29 @@ export const collections: Collection[] = [
         role: "Render short motion-graphics ads for social as MP4 from GSAP timelines.",
       },
       {
+        slug: "motion-graphics",
+        pathSlug: "heygen-com/motion-graphics",
+        role: "Design kinetic type, stats, and lower-third overlays in HyperFrames.",
+      },
+      {
+        slug: "remotion-to-hyperframes",
+        pathSlug: "heygen-com/remotion-to-hyperframes",
+        role: "Port Remotion source to HyperFrames when migrating stacks.",
+      },
+      {
         slug: "remotion-best-practices",
         pathSlug: "remotion-dev/remotion-best-practices",
         role: "Apply Remotion patterns for React-based video composition.",
+      },
+      {
+        slug: "remotion-create",
+        pathSlug: "remotion-dev/remotion-create",
+        role: "Scaffold new Remotion video projects.",
+      },
+      {
+        slug: "remotion-render",
+        pathSlug: "remotion-dev/remotion-render",
+        role: "Export finished Remotion compositions to video.",
       },
       {
         slug: "brag",
@@ -93,8 +128,9 @@ export const collections: Collection[] = [
     ],
     agentCapabilities: [
       "Plan product films and social cuts with clear story beats and brand constraints.",
-      "Render motion ads and launch videos with repeatable capture and export pipelines.",
-      "Compose Remotion timelines synced to music and real product components.",
+      "Render HyperFrames HTML/GSAP compositions and Remotion React timelines to MP4.",
+      "Build launch videos, motion overlays, and shotcraft promos from live product UI.",
+      "Port between Remotion and HyperFrames when a stack migration is required.",
       "Generate Lottie, scroll-scrub, and looping icon motion for marketing surfaces.",
     ],
     relatedSlugs: [
