@@ -18,6 +18,24 @@ const featuredAgents = featuredAgentIds
   .map((id) => agents.find((agent) => agent.id === id))
   .filter((agent): agent is NonNullable<typeof agent> => Boolean(agent));
 const featuredPlaybook = playbook.slice(0, 6);
+const footerCollectionSlugs = [
+  "mobile-app-design",
+  "website-layout",
+  "visual-hierarchy",
+  "design-principles",
+  "landing-page-design",
+  "button-design",
+  "form-design",
+  "videos",
+];
+const collectionBySlug = new Map(
+  collections.map((collection) => [collection.slug, collection]),
+);
+const footerCollections = footerCollectionSlugs
+  .map((slug) => collectionBySlug.get(slug))
+  .filter((collection): collection is NonNullable<typeof collection> =>
+    Boolean(collection),
+  );
 type FooterLink = {
   label: string;
   href: string;
@@ -56,7 +74,7 @@ const footerSections: FooterSection[] = [
   },
   {
     title: "Collections",
-    links: collections.slice(0, 7).map((collection) => ({
+    links: footerCollections.map((collection) => ({
       label: collection.title,
       href: `/collections/${collection.slug}`,
     })),

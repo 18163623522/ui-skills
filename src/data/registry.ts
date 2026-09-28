@@ -4129,6 +4129,206 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["frontend", "craft", "visual"],
     description: "Usage rules and conventions for building interfaces with daisyUI 5.",
   },
+  {
+    slug: "product-film",
+    user: "Rieranthony",
+    repo: "product-film-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/Rieranthony/product-film-skill/main/plugins/product-film/skills/product-film/SKILL.md",
+    githubUrl:
+      "https://github.com/Rieranthony/product-film-skill/blob/main/plugins/product-film/skills/product-film/SKILL.md",
+    name: "product-film",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Make a showreel-grade product film in code with Remotion, synced to music, using the product design system, components, and voice.",
+  },
+  {
+    slug: "motion-ad",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/motion-ad/raw",
+    githubUrl: "https://www.danny.md/skills/motion-ad",
+    name: "motion-ad",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Produce short motion-graphics video ads for any product as rendered MP4s, with GSAP-driven HTML beats and frame-by-frame capture.",
+  },
+  {
+    slug: "explore-design",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/explore-design/raw",
+    githubUrl: "https://www.danny.md/skills/explore-design",
+    name: "explore-design",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      "Generate a single self-contained HTML file with several distinct visual directions side by side so the user can pick a direction.",
+  },
+  {
+    slug: "screenshot",
+    user: "danny",
+    repo: "danny-md",
+    rawUrl: "https://www.danny.md/skills/screenshot/raw",
+    githubUrl: "https://www.danny.md/skills/screenshot",
+    name: "screenshot",
+    topics: ["tooling", "frontend", "visual"],
+    description:
+      "Capture a screenshot of any rendered web page in headless Chrome — full page, viewport, section, or element — for review and motion pipelines.",
+  },
+  {
+    slug: "3dicon",
+    user: "samyost1",
+    repo: "3dicon",
+    rawUrl:
+      "https://raw.githubusercontent.com/samyost1/3dicon/main/skills/3dicon/SKILL.md",
+    githubUrl:
+      "https://github.com/samyost1/3dicon/blob/main/skills/3dicon/SKILL.md",
+    name: "3dicon",
+    topics: ["video", "motion", "3d"],
+    description:
+      "Turn a prompt or still image into a looping animated icon with real transparency, output as animated WebP.",
+  },
+  {
+    slug: "hyperframes",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/hyperframes/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md",
+    name: "hyperframes",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Entry point for creating, editing, animating, or rendering video and motion graphics with HyperFrames HTML compositions.",
+  },
+  {
+    slug: "hyperframes-core",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/hyperframes-core/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes-core/SKILL.md",
+    name: "hyperframes-core",
+    topics: ["video", "systems", "frontend"],
+    description:
+      "HyperFrames composition contract: timing attributes, tracks, sub-compositions, variables, and deterministic render rules.",
+  },
+  {
+    slug: "general-video",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/general-video/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/general-video/SKILL.md",
+    name: "general-video",
+    topics: ["video", "motion", "frontend"],
+    description:
+      "Author custom HyperFrames compositions for multi-scene pieces, reels, montages, and freeform product or brand videos.",
+  },
+  {
+    slug: "motion-graphics",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/motion-graphics/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/motion-graphics/SKILL.md",
+    name: "motion-graphics",
+    topics: ["video", "motion", "visual"],
+    description:
+      "Short design-led motion graphics: kinetic type, stats, charts, logo stings, lower-thirds, and social overlays.",
+  },
+  {
+    slug: "remotion-to-hyperframes",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/remotion-to-hyperframes/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/remotion-to-hyperframes/SKILL.md",
+    name: "remotion-to-hyperframes",
+    topics: ["video", "remotion", "tooling"],
+    description:
+      "Port an existing Remotion React composition source to HyperFrames HTML when explicitly asked to migrate.",
+  },
+  {
+    slug: "product-launch-video",
+    user: "memex-lab",
+    repo: "product-launch-video-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/memex-lab/product-launch-video-skill/main/skills/product-launch-video/SKILL.md",
+    githubUrl:
+      "https://github.com/memex-lab/product-launch-video-skill/blob/main/skills/product-launch-video/SKILL.md",
+    name: "product-launch-video",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Design and build high-impact product launch, promo, and feature announcement videos with Remotion and story-driven motion.",
+  },
+  {
+    slug: "remotion-create",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-create/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-create/SKILL.md",
+    name: "remotion-create",
+    topics: ["video", "remotion", "tooling"],
+    description: "Create a new Remotion video project with official scaffolding and conventions.",
+  },
+  {
+    slug: "remotion-render",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-render/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-render/SKILL.md",
+    name: "remotion-render",
+    topics: ["video", "remotion", "tooling"],
+    description: "Export and render a Remotion composition to video with the official render workflow.",
+  },
+  {
+    slug: "remotion-captions",
+    user: "remotion-dev",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-captions/SKILL.md",
+    githubUrl:
+      "https://github.com/remotion-dev/skills/blob/main/skills/remotion-captions/SKILL.md",
+    name: "remotion-captions",
+    topics: ["video", "remotion", "accessibility"],
+    description:
+      "Transcribe, display, and animate captions in Remotion compositions.",
+  },
+  {
+    slug: "video-shotcraft",
+    user: "Vincentwei1021",
+    repo: "video-shotcraft",
+    rawUrl:
+      "https://raw.githubusercontent.com/Vincentwei1021/video-shotcraft/main/SKILL.md",
+    githubUrl:
+      "https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md",
+    name: "video-shotcraft",
+    topics: ["video", "remotion", "motion"],
+    description:
+      "Create cinematic product videos from shot recipe cards with Remotion, page screenshots, 2.5D camera moves, and beat-synced cuts.",
+  },
+  {
+    slug: "blueprint-animation",
+    user: "moguzbulbul",
+    repo: "blueprint-animation",
+    rawUrl:
+      "https://raw.githubusercontent.com/moguzbulbul/blueprint-animation/main/SKILL.md",
+    githubUrl:
+      "https://github.com/moguzbulbul/blueprint-animation/blob/main/SKILL.md",
+    name: "blueprint-animation",
+    topics: ["video", "motion", "visual"],
+    description:
+      "Blueprint animation that explains UX decisions step by step for case studies and posts, with Explain or Redesign modes on a single continuous screen.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {

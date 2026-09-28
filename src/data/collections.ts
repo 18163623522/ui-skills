@@ -488,6 +488,132 @@ export const collections: Collection[] = [
     ],
   },
   {
+    slug: "videos",
+    title: "Videos",
+    keyword: "product videos",
+    seoTitle:
+      "Product videos, launch films, and motion graphics | UI Skills",
+    cardDescription:
+      "Ship product launch videos, social motion ads, HyperFrames clips, and Remotion films with agent skills built for design engineers.",
+    metaDescription:
+      "Product videos and launch films for SaaS and frontend teams: HyperFrames HTML-to-MP4, Remotion render pipelines, motion-graphics overlays, brag launch cuts, shotcraft promos, and Lottie motion.",
+    intro:
+      "Build product videos when static UI is not enough — launch films, paid social motion ads, demo reels, and short shareable cuts. These skills cover HyperFrames and Remotion pipelines, story beats, motion overlays, UI capture, and export-ready MP4 output.",
+    playbook: [
+      "use-structural-skeletons",
+      "use-ease-out-on-enter",
+      "stagger-infrequent-entrances",
+      "keep-exits-subtle",
+      "use-interruptible-transitions",
+      "restrain-high-frequency-motion",
+    ],
+    skills: [
+      {
+        slug: "hyperframes",
+        pathSlug: "heygen-com/hyperframes",
+        role: "Start HyperFrames workflows for HTML/GSAP compositions rendered to MP4.",
+      },
+      {
+        slug: "video-shotcraft",
+        pathSlug: "vincentwei1021/video-shotcraft",
+        role: "Build cinematic product videos from shot cards and real UI captures.",
+      },
+      {
+        slug: "product-launch-video",
+        pathSlug: "memex-lab/product-launch-video",
+        role: "Storyboard and build spectacular Remotion launch and promo films.",
+      },
+      {
+        slug: "product-film",
+        pathSlug: "rieranthony/product-film",
+        role: "Build showreel-grade product films in Remotion from the real design system.",
+      },
+      {
+        slug: "blueprint-animation",
+        pathSlug: "moguzbulbul/blueprint-animation",
+        role: "Animate a single screen to explain UX decisions step by step for case studies.",
+      },
+      {
+        slug: "motion-ad",
+        pathSlug: "danny/motion-ad",
+        role: "Render short motion-graphics ads for social as MP4 from GSAP timelines.",
+      },
+      {
+        slug: "motion-graphics",
+        pathSlug: "heygen-com/motion-graphics",
+        role: "Design kinetic type, stats, and lower-third overlays in HyperFrames.",
+      },
+      {
+        slug: "remotion-to-hyperframes",
+        pathSlug: "heygen-com/remotion-to-hyperframes",
+        role: "Port Remotion source to HyperFrames when migrating stacks.",
+      },
+      {
+        slug: "remotion-best-practices",
+        pathSlug: "remotion-dev/remotion-best-practices",
+        role: "Apply Remotion patterns for React-based video composition.",
+      },
+      {
+        slug: "remotion-create",
+        pathSlug: "remotion-dev/remotion-create",
+        role: "Scaffold new Remotion video projects.",
+      },
+      {
+        slug: "remotion-render",
+        pathSlug: "remotion-dev/remotion-render",
+        role: "Export finished Remotion compositions to video.",
+      },
+      {
+        slug: "brag",
+        pathSlug: "latent-spaces/brag",
+        role: "Turn a shipped project into a launch video with motion and music.",
+      },
+      {
+        slug: "brag-slim",
+        pathSlug: "latent-spaces/brag-slim",
+        role: "Produce a lightweight launch cut without bundled asset dependencies.",
+      },
+      {
+        slug: "3dicon",
+        pathSlug: "samyost1/3dicon",
+        role: "Animate icons into transparent looping WebP assets.",
+      },
+      {
+        slug: "text-to-lottie",
+        pathSlug: "diffusionstudio/text-to-lottie",
+        role: "Generate polished Lottie motion from text prompts.",
+      },
+      {
+        slug: "scroll-world",
+        pathSlug: "oso95/scroll-world",
+        role: "Build scroll-scrubbed cinematic landing experiences with generated scenes.",
+      },
+      {
+        slug: "video-interaction-mapper",
+        pathSlug: "figma/video-interaction-mapper",
+        role: "Map interaction intent from reference video into implementable motion.",
+      },
+      {
+        slug: "screenshot",
+        pathSlug: "danny/screenshot",
+        role: "Capture UI frames from live pages for review and compositing.",
+      },
+    ],
+    agentCapabilities: [
+      "Plan product launch videos and social cuts with clear story beats and brand constraints.",
+      "Render HyperFrames HTML/GSAP compositions and Remotion React timelines to MP4.",
+      "Build launch films, motion overlays, and shotcraft promos from live product UI.",
+      "Port between Remotion and HyperFrames when a stack migration is required.",
+      "Generate Lottie, scroll-scrub, and looping icon motion for marketing surfaces.",
+    ],
+    relatedSlugs: [
+      "landing-page-design",
+      "ai-generated-ui",
+      "visual-hierarchy",
+      "website-layout",
+    ],
+  },
+  {
     slug: "dashboard-ui",
     title: "Dashboard UI",
     keyword: "dashboard ui",
