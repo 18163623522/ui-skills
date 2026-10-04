@@ -6,7 +6,10 @@ import Breadcrumbs from "../ui/breadcrumbs.astro";
 import IconLibraryDirectory from "../ui/icon-library-directory";
 import { iconLibraries } from "../data/icon-libraries";
 
-const breadcrumbItems = [{ label: "Explore", href: "/" }, { label: "Icon libraries" }];
+const breadcrumbItems = [
+  { label: "Explore", href: "/" },
+  { label: "Icon libraries" },
+];
 const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
 const pageUrl = new URL("/icons", siteOrigin).toString();
 const structuredData = [
@@ -14,7 +17,8 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Best icon libraries for UI design",
-    description: "Compare free and open-source icon libraries for React, web apps, and modern UI design.",
+    description:
+      "Compare free and open-source icon libraries for React, web apps, and modern UI design.",
     url: pageUrl,
     mainEntity: {
       "@type": "ItemList",
@@ -46,14 +50,18 @@ const structuredData = [
   description="Compare the best free and open-source icon libraries for React, web apps and modern UI design."
 >
   <div class="relative flex min-h-dvh flex-col items-center">
-    <div class="relative mt-20 container-3xl">
+    <div class="container-3xl relative mt-20">
       <div class="mx-auto flex w-full flex-col gap-10">
         <Breadcrumbs items={breadcrumbItems} />
 
         <header class="flex max-w-2xl flex-col gap-4">
-          <h1 class="type-h1 text-content-primary text-balance">Best icon libraries for UI design</h1>
-          <p class="type-body-md text-lg text-content-secondary text-pretty">
-            Find free icons and React icon libraries for web apps and product design. Browse open-source sets and choose the right one for your project.
+          <h1 class="type-h1 text-content-primary text-balance">
+            Best icon libraries for UI design
+          </h1>
+          <p class="type-body-md text-content-secondary text-lg text-pretty">
+            Find free icons and React icon libraries for web apps and product
+            design. Browse open-source sets and choose the right one for your
+            project.
           </p>
         </header>
 
@@ -63,7 +71,6 @@ const structuredData = [
             <IconLibraryDirectory libraries={iconLibraries} client:load />
           </div>
         </section>
-
       </div>
     </div>
   </div>

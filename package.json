@@ -14,6 +14,7 @@
     "check:skills": "node --import tsx ./scripts/check-registry-skills.mjs",
     "check:publisher-skills": "node --import tsx ./scripts/check-publisher-skills.mjs",
     "digests": "node --import tsx ./scripts/precompute-agent-skills-digests.mjs",
+    "update:github-metadata": "node --import tsx ./scripts/update-github-metadata.mjs",
     "check:digests": "node --import tsx ./scripts/check-agent-skills-digests.mjs",
     "preview": "astro preview",
     "astro": "astro",
