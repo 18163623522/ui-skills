@@ -3,7 +3,7 @@ export const prerender = true;
 
 import Layout from "../layouts/Layout.astro";
 import Breadcrumbs from "../ui/breadcrumbs.astro";
-import IconLibraryCard from "../ui/icon-library-card.astro";
+import IconLibraryDirectory from "../ui/icon-library-directory";
 import { iconLibraries } from "../data/icon-libraries";
 
 const breadcrumbItems = [{ label: "Explore", href: "/" }, { label: "Icon libraries" }];
@@ -42,7 +42,7 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Best icon libraries for UI design, React and web apps | UI Skills"
+  title="Best Icon Libraries for UI Design | UI Skills"
   description="Compare the best free and open-source icon libraries for React, web apps and modern UI design."
 >
   <div class="relative flex min-h-dvh flex-col items-center">
@@ -53,13 +53,14 @@ const structuredData = [
         <header class="flex max-w-2xl flex-col gap-4">
           <h1 class="type-h1 text-content-primary text-balance">Best icon libraries for UI design</h1>
           <p class="type-body-md text-lg text-content-secondary text-pretty">
-            A practical shortlist of free icons and open-source icon libraries for React, web apps, and modern product interfaces. Compare the visual style, packages, license, and ecosystem before choosing a set for your next project.
+            Find free icons and React icon libraries for web apps and product design. Browse open-source sets and choose the right one for your project.
           </p>
         </header>
 
         <section aria-labelledby="library-list-title">
+          <h2 id="library-list-title" class="sr-only">Icon libraries</h2>
           <div>
-            {iconLibraries.map((library) => <IconLibraryCard {...library} />)}
+            <IconLibraryDirectory libraries={iconLibraries} client:load />
           </div>
         </section>
 

@@ -1,5 +1,5 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import { Tooltip, TooltipProvider } from "./tooltip";
+import { Tooltip } from "./tooltip";
 
 type Props = {
   name: string;
@@ -16,8 +16,7 @@ export default function IconLibraryActions({
   githubUrl,
 }: Props) {
   return (
-    <TooltipProvider>
-      <div className="flex shrink-0 items-center gap-1 self-center">
+    <div className="flex shrink-0 items-center gap-1 self-center">
         <Tooltip content={`Open ${name} website`} side="top">
           <a
             className={actionClassName}
@@ -42,7 +41,6 @@ export default function IconLibraryActions({
             </svg>
           </a>
         </Tooltip>
-      </div>
-    </TooltipProvider>
+    </div>
   );
 }
