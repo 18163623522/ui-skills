@@ -1,0 +1,78 @@
+---
+export const prerender = true;
+
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../ui/breadcrumbs.astro";
+import ComponentLibraryDirectory from "../ui/component-library-directory";
+import { componentLibraries } from "../data/component-libraries";
+
+const breadcrumbItems = [
+  { label: "Explore", href: "/" },
+  { label: "Components" },
+];
+const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
+const pageUrl = new URL("/components", siteOrigin).toString();
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Best React Component Libraries and UI Components",
+    description:
+      "Compare the best React component libraries, primitives, shadcn components, Tailwind UI systems, animated components, and generative UI kits.",
+    url: pageUrl,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: componentLibraries.length,
+      itemListElement: componentLibraries.map((library, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: library.name,
+        url: library.websiteUrl,
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.label,
+      item: new URL(item.href ?? "/components", siteOrigin).toString(),
+    })),
+  },
+];
+---
+
+<Layout
+  structuredData={structuredData}
+  title="Best React Component Libraries and UI Components | UI Skills"
+  description="Compare the best React component libraries, primitives, shadcn components, Tailwind UI systems, animated components, and generative UI kits."
+>
+  <div class="relative flex min-h-dvh flex-col items-center">
+    <div class="container-3xl relative mt-20">
+      <div class="mx-auto flex w-full flex-col gap-10">
+        <Breadcrumbs items={breadcrumbItems} />
+
+        <header class="flex max-w-2xl flex-col gap-4">
+          <h1 class="type-h1 text-content-primary text-balance">
+            Best React component libraries for UI design
+          </h1>
+          <p class="type-body-md text-content-secondary text-lg text-pretty">
+            Find production-ready React libraries, primitives, copy-paste
+            components, Tailwind systems, animated interfaces, and generative UI
+            kits for modern web projects.
+          </p>
+        </header>
+
+        <section aria-labelledby="library-list-title">
+          <h2 id="library-list-title" class="sr-only">Component libraries</h2>
+          <ComponentLibraryDirectory
+            libraries={componentLibraries}
+            client:load
+          />
+        </section>
+      </div>
+    </div>
+  </div>
+</Layout>

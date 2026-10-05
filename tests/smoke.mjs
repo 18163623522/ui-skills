@@ -124,6 +124,22 @@ try {
     );
   }
 
+  const components = await fetchLocal("/components");
+  if (components.status !== 200) {
+    throw new Error(`Components directory returned ${components.status}`);
+  }
+  const componentsBody = await components.text();
+  for (const marker of [
+    "Best React component libraries for UI design",
+    "Motion Primitives",
+    "Prompt Kit",
+    '"@type":"CollectionPage"',
+  ]) {
+    if (!componentsBody.includes(marker)) {
+      throw new Error(`Components page is missing ${marker}`);
+    }
+  }
+
   const stonksScript = await fetchLocal("/analytics/stonks.js");
   if (stonksScript.status !== 200) {
     throw new Error("First-party One Dollar Stats script is missing");

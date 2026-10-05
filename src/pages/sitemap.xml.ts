@@ -49,6 +49,7 @@ export const GET: APIRoute = ({ site }) => {
     "/skills",
     "/skills/topics",
     "/icons",
+    "/components",
     "/jobs",
     "/collections",
     ...(SHOW_DESIGN_MD ? ["/design-md"] : []),
