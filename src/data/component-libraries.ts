@@ -136,6 +136,18 @@ export const componentLibraries: ComponentLibrary[] = [
     ownership: "Installed package",
   },
   {
+    name: "Ariakit",
+    description:
+      "Accessible, unstyled React components and hooks for building custom interfaces with complete control over behavior and styling.",
+    websiteUrl: "https://ariakit.org/",
+    githubRepo: "ariakit/ariakit",
+    collection: "primitives",
+    bestFor: "Accessible custom systems",
+    framework: "React",
+    styling: "Bring your own CSS",
+    ownership: "Installed package",
+  },
+  {
     name: "Radix UI",
     description:
       "Unstyled React primitives for menus, dialogs, popovers, tabs, and other difficult interface behaviors.",
@@ -234,6 +246,30 @@ export const componentLibraries: ComponentLibrary[] = [
     ownership: "Installed package",
   },
   {
+    name: "Material UI",
+    description:
+      "A comprehensive React component library with production-ready components, theming, accessibility, and Material Design foundations.",
+    websiteUrl: "https://mui.com/material-ui/",
+    githubRepo: "mui/material-ui",
+    collection: "production",
+    bestFor: "Production React applications",
+    framework: "React",
+    styling: "Emotion and CSS",
+    ownership: "Installed package",
+  },
+  {
+    name: "PrimeReact",
+    description:
+      "A broad React UI component library with enterprise-ready inputs, data tables, overlays, charts, and layout components.",
+    websiteUrl: "https://primereact.org/",
+    githubRepo: "primefaces/primereact",
+    collection: "production",
+    bestFor: "Enterprise application interfaces",
+    framework: "React",
+    styling: "Themes and CSS",
+    ownership: "Installed package",
+  },
+  {
     name: "HeroUI",
     description:
       "A modern React component library with polished defaults, accessible behavior, and Tailwind-friendly theming.",
@@ -244,6 +280,18 @@ export const componentLibraries: ComponentLibrary[] = [
     framework: "React",
     styling: "Tailwind CSS",
     ownership: "Installed package",
+  },
+  {
+    name: "Untitled UI React",
+    description:
+      "A large open-source React component collection built with Tailwind CSS and React Aria for polished, accessible product interfaces.",
+    websiteUrl: "https://www.untitledui.com/react/",
+    githubRepo: "untitleduico/react",
+    collection: "production",
+    bestFor: "Tailwind product interfaces",
+    framework: "React",
+    styling: "Tailwind CSS",
+    ownership: "Copy source into project",
   },
   {
     name: "Park UI",
@@ -361,6 +409,30 @@ export const componentLibraries: ComponentLibrary[] = [
     githubRepo: "shadcnblocks/shadcn-ui-blocks",
     collection: "copy-paste",
     bestFor: "Page sections and starter layouts",
+    framework: "React",
+    styling: "Tailwind CSS",
+    ownership: "Copy source into project",
+  },
+  {
+    name: "Intent UI",
+    description:
+      "Copy-and-paste React components built on React Aria Components and Tailwind CSS with accessible behavior and flexible styling.",
+    websiteUrl: "https://intentui.com/",
+    githubRepo: "irsyadadl/intentui",
+    collection: "copy-paste",
+    bestFor: "Accessible shadcn-style interfaces",
+    framework: "React",
+    styling: "Tailwind CSS",
+    ownership: "Copy source into project",
+  },
+  {
+    name: "ReUI",
+    description:
+      "A design-forward shadcn/ui platform with reusable React and Tailwind components, blocks, and patterns for production interfaces.",
+    websiteUrl: "https://reui.io/",
+    githubRepo: "keenthemes/reui",
+    collection: "tailwind",
+    bestFor: "React and Tailwind product UI",
     framework: "React",
     styling: "Tailwind CSS",
     ownership: "Copy source into project",
