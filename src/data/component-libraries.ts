@@ -22,43 +22,83 @@ export type ComponentLibrary = {
 export const componentCollections: Array<{
   slug: ComponentCollection;
   title: string;
+  controlTitle: string;
   description: string;
+  intro: string;
+  seoTitle: string;
+  metaDescription: string;
 }> = [
   {
     slug: "production",
     title: "React component libraries",
+    controlTitle: "React",
     description:
       "Complete UI systems for teams shipping dashboards, products, and applications with a consistent component model.",
+    intro:
+      "Compare established React component libraries for teams that need polished defaults, broad coverage, and a consistent foundation for product interfaces.",
+    seoTitle: "React Component Libraries",
+    metaDescription:
+      "Browse curated React component libraries for dashboards, products, and application interfaces.",
   },
   {
     slug: "primitives",
     title: "React primitives",
+    controlTitle: "Primitives",
     description:
       "Low-level building blocks for teams that want to own the visual language while relying on robust interaction behavior.",
+    intro:
+      "Find accessible, unstyled React primitives for teams that want full control over visual language, tokens, and component composition.",
+    seoTitle: "React Primitives",
+    metaDescription:
+      "Browse React primitives for accessible interactions, headless components, and custom design systems.",
   },
   {
     slug: "copy-paste",
     title: "Copy-paste and shadcn components",
+    controlTitle: "shadcn",
     description:
       "Source-first component collections that let you copy, adapt, and keep the implementation inside your own codebase.",
+    intro:
+      "Explore source-first shadcn component collections and copy-paste building blocks that stay inside your codebase and remain easy to customize.",
+    seoTitle: "Shadcn Components",
+    metaDescription:
+      "Browse curated shadcn components and copy-paste UI collections for React and Tailwind CSS projects.",
   },
   {
     slug: "motion",
     title: "Animated and creative components",
+    controlTitle: "Motion",
     description:
       "Motion-rich components and interaction patterns for expressive landing pages, product moments, and visual experiments.",
+    intro:
+      "Compare animated React components, interaction patterns, and motion libraries for expressive landing pages and product moments.",
+    seoTitle: "Animated React Components",
+    metaDescription:
+      "Browse animated React components and creative UI libraries for motion-rich interfaces and landing pages.",
   },
   {
     slug: "tailwind",
-    title: "Tailwind component libraries",
+    title: "Tailwind CSS component libraries",
+    controlTitle: "Tailwind CSS",
     description:
       "Utility-first component systems and ready-made patterns for teams building with Tailwind CSS.",
+    intro:
+      "Find Tailwind CSS component libraries and ready-made UI patterns for marketing sites, dashboards, and web applications.",
+    seoTitle: "Tailwind CSS Component Libraries",
+    metaDescription:
+      "Browse Tailwind CSS component libraries, UI systems, and ready-made patterns for modern web projects.",
   },
   {
     slug: "generative-ui",
     title: "Generative UI and AI components",
+    controlTitle: "AI UI",
     description:
       "Components for chat, agent workflows, tool calls, and AI interfaces that need more than a standard form or dashboard.",
+    intro:
+      "Explore generative UI components for chat, streaming responses, tool calls, agent workflows, and AI-native product interfaces.",
+    seoTitle: "Generative UI Components",
+    metaDescription:
+      "Browse generative UI and AI components for chat interfaces, agent workflows, tool calls, and streaming experiences.",
   },
 ];
 

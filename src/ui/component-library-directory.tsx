@@ -1,5 +1,8 @@
 import githubMetadata from "../data/github-metadata.json";
-import type { ComponentLibrary } from "../data/component-libraries";
+import {
+  componentCollections,
+  type ComponentLibrary,
+} from "../data/component-libraries";
 import IconLibraryActions from "./icon-library-actions";
 import { TooltipProvider } from "./tooltip";
 
@@ -9,6 +12,7 @@ type GithubMetadata = {
 
 type Props = {
   libraries: ComponentLibrary[];
+  showCollectionHeaders?: boolean;
 };
 
 const repositoryMetadata = githubMetadata as GithubMetadata;
@@ -30,84 +34,125 @@ const formatStars = (stars?: number) => {
   return `${Math.floor(stars / 1000)}k+`;
 };
 
-export default function ComponentLibraryDirectory({ libraries }: Props) {
+export default function ComponentLibraryDirectory({
+  libraries,
+  showCollectionHeaders = true,
+}: Props) {
+  if (!showCollectionHeaders) {
+    return (
+      <TooltipProvider>
+        <div>
+          {libraries.map((library) => (
+            <LibraryRow key={library.name} library={library} />
+          ))}
+        </div>
+      </TooltipProvider>
+    );
+  }
+
   return (
     <TooltipProvider>
-      <div>
-        {libraries.map((library) => {
-          const repository = library.githubRepo
-            ? repositoryMetadata.repositories[library.githubRepo.toLowerCase()]
-            : undefined;
-          const displayStars = formatStars(repository?.stars);
-          const host = getWebsiteHost(library.websiteUrl);
-          const githubOwner = library.githubRepo?.split("/")[0];
-          const avatarUrl = githubOwner
-            ? `https://github.com/${githubOwner}.png?size=80`
-            : `https://www.google.com/s2/favicons?domain=${host}&sz=64`;
-          const avatarHref = library.githubRepo
-            ? `https://github.com/${library.githubRepo}`
-            : library.websiteUrl;
-          const avatarLabel = library.githubRepo
-            ? `Open ${library.name} on GitHub`
-            : `Open ${library.name} website`;
+      <div className="flex flex-col gap-10">
+        {componentCollections.map((collection) => {
+          const collectionLibraries = libraries.filter(
+            (library) => library.collection === collection.slug,
+          );
+
+          if (collectionLibraries.length === 0) return null;
 
           return (
-            <article
-              className="border-line-default flex items-start gap-3 border-b py-4 sm:items-center"
-              key={library.name}
+            <section
+              aria-labelledby={`${collection.slug}-title`}
+              id={collection.slug}
+              key={collection.slug}
             >
-              <a
-                href={avatarHref}
-                aria-label={avatarLabel}
-                className="shrink-0"
-              >
-                <img
-                  src={avatarUrl}
-                  alt=""
-                  aria-hidden="true"
-                  width="40"
-                  height="40"
-                  loading="lazy"
-                  decoding="async"
-                  className="border-line-default bg-fill-subtle size-10 rounded-xl border object-cover"
-                />
-              </a>
-
-              <div className="min-w-0 flex-1">
-                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                  <h2 className="type-body-md text-content-primary truncate font-[450]">
-                    {library.name}
-                  </h2>
-                  {displayStars && (
-                    <span
-                      className="type-body-sm text-content-muted inline-flex items-center gap-1"
-                      aria-label={`${displayStars} GitHub stars`}
-                    >
-                      <span aria-hidden="true" className="text-[11px]">
-                        ★
-                      </span>
-                      {displayStars}
-                    </span>
-                  )}
-                </div>
-                <p className="type-body-md text-content-secondary truncate">
-                  {library.description}
+              <header className="mb-3 flex flex-col gap-1.5">
+                <h2
+                  className="type-body-lg text-content-primary font-[450] tracking-tight"
+                  id={`${collection.slug}-title`}
+                >
+                  {collection.title}
+                </h2>
+                <p className="type-body-md text-content-secondary text-pretty">
+                  {collection.description}
                 </p>
+              </header>
+              <div>
+                {collectionLibraries.map((library) => (
+                  <LibraryRow key={library.name} library={library} />
+                ))}
               </div>
-
-              <IconLibraryActions
-                name={library.name}
-                websiteUrl={library.websiteUrl}
-                githubUrl={
-                  library.githubRepo
-                    ? `https://github.com/${library.githubRepo}`
-                    : undefined
-                }
-              />
-            </article>
+            </section>
           );
         })}
       </div>
     </TooltipProvider>
+  );
+}
+
+function LibraryRow({ library }: { library: ComponentLibrary }) {
+  const repository = library.githubRepo
+    ? repositoryMetadata.repositories[library.githubRepo.toLowerCase()]
+    : undefined;
+  const displayStars = formatStars(repository?.stars);
+  const host = getWebsiteHost(library.websiteUrl);
+  const githubOwner = library.githubRepo?.split("/")[0];
+  const avatarUrl = githubOwner
+    ? `https://github.com/${githubOwner}.png?size=80`
+    : `https://www.google.com/s2/favicons?domain=${host}&sz=64`;
+  const avatarHref = library.githubRepo
+    ? `https://github.com/${library.githubRepo}`
+    : library.websiteUrl;
+  const avatarLabel = library.githubRepo
+    ? `Open ${library.name} on GitHub`
+    : `Open ${library.name} website`;
+
+  return (
+    <article className="border-line-default flex items-start gap-3 border-b py-4 sm:items-center">
+      <a href={avatarHref} aria-label={avatarLabel} className="shrink-0">
+        <img
+          src={avatarUrl}
+          alt=""
+          aria-hidden="true"
+          width="40"
+          height="40"
+          loading="lazy"
+          decoding="async"
+          className="border-line-default bg-fill-subtle size-10 rounded-xl border object-cover"
+        />
+      </a>
+
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+          <h3 className="type-body-md text-content-primary truncate font-[450]">
+            {library.name}
+          </h3>
+          {displayStars && (
+            <span
+              className="type-body-sm text-content-muted inline-flex items-center gap-1"
+              aria-label={`${displayStars} GitHub stars`}
+            >
+              <span aria-hidden="true" className="text-[11px]">
+                ★
+              </span>
+              {displayStars}
+            </span>
+          )}
+        </div>
+        <p className="type-body-md text-content-secondary truncate">
+          {library.description}
+        </p>
+      </div>
+
+      <IconLibraryActions
+        name={library.name}
+        websiteUrl={library.websiteUrl}
+        githubUrl={
+          library.githubRepo
+            ? `https://github.com/${library.githubRepo}`
+            : undefined
+        }
+      />
+    </article>
   );
 }

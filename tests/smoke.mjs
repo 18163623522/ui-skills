@@ -130,13 +130,28 @@ try {
   }
   const componentsBody = await components.text();
   for (const marker of [
-    "Best React component libraries for UI design",
+    "React component libraries",
     "Motion Primitives",
     "prompt-kit",
+    'href="/components/production"',
+    "Explore related directories",
     '"@type":"CollectionPage"',
   ]) {
     if (!componentsBody.includes(marker)) {
       throw new Error(`Components page is missing ${marker}`);
+    }
+  }
+
+  const productionComponents = await fetchLocal("/components/production");
+  if (productionComponents.status !== 200) {
+    throw new Error(
+      `Production components page returned ${productionComponents.status}`,
+    );
+  }
+  const productionComponentsBody = await productionComponents.text();
+  for (const marker of ["React component libraries", 'href="/components"']) {
+    if (!productionComponentsBody.includes(marker)) {
+      throw new Error(`Production components page is missing ${marker}`);
     }
   }
 
