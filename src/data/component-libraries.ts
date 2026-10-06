@@ -211,6 +211,78 @@ export const componentLibraries: ComponentLibrary[] = [
     ownership: "Copy source into project",
   },
   {
+    name: "Fluent UI",
+    description:
+      "Microsoft's React and web component system for accessible, enterprise-scale applications and product surfaces.",
+    websiteUrl: "https://react.fluentui.dev/",
+    githubRepo: "microsoft/fluentui",
+    collection: "production",
+    bestFor: "Enterprise product interfaces",
+    framework: "React and web components",
+    styling: "Fluent design tokens",
+    ownership: "Installed package",
+  },
+  {
+    name: "Shopify Polaris",
+    description:
+      "Shopify's design system for app surfaces, now centered on technology-agnostic Web Components for current development.",
+    websiteUrl: "https://polaris.shopify.com/",
+    githubRepo: "Shopify/polaris-react-archive",
+    collection: "production",
+    bestFor: "Shopify app interfaces",
+    framework: "Web Components",
+    styling: "Polaris tokens and CSS",
+    ownership: "Installed package and components",
+  },
+  {
+    name: "Motion",
+    description:
+      "A production-grade animation library for React, JavaScript, and Vue with gestures, springs, layout, and scroll effects.",
+    websiteUrl: "https://motion.dev/",
+    githubRepo: "motiondivision/motion",
+    collection: "motion",
+    bestFor: "Production UI animation",
+    framework: "React, JavaScript, and Vue",
+    styling: "Animation APIs",
+    ownership: "Installed package",
+  },
+  {
+    name: "React Spring",
+    description:
+      "A spring-physics animation library for fluid React, web, native, Three.js, and other interactive experiences.",
+    websiteUrl: "https://www.react-spring.dev/",
+    githubRepo: "pmndrs/react-spring",
+    collection: "motion",
+    bestFor: "Physics-based interaction",
+    framework: "React and React Native",
+    styling: "Animation APIs",
+    ownership: "Installed package",
+  },
+  {
+    name: "GSAP",
+    description:
+      "A framework-agnostic animation platform for high-performance UI, SVG, scroll, text, and interactive web motion.",
+    websiteUrl: "https://gsap.com/",
+    githubRepo: "greensock/GSAP",
+    collection: "motion",
+    bestFor: "Advanced web animation",
+    framework: "JavaScript and frontend frameworks",
+    styling: "Animation APIs and plugins",
+    ownership: "Installed package",
+  },
+  {
+    name: "Anime.js",
+    description:
+      "A lightweight JavaScript animation engine for CSS properties, SVG, DOM attributes, timelines, and draggable interactions.",
+    websiteUrl: "https://animejs.com/",
+    githubRepo: "juliangarnier/anime",
+    collection: "motion",
+    bestFor: "Flexible web animation",
+    framework: "JavaScript and web",
+    styling: "Animation APIs",
+    ownership: "Installed package",
+  },
+  {
     name: "Motion Primitives",
     description:
       "A collection of animated React components and motion patterns for expressive interfaces and product moments.",
@@ -239,6 +311,7 @@ export const componentLibraries: ComponentLibrary[] = [
     description:
       "A large collection of shadcn/ui blocks for assembling marketing pages, dashboards, and application shells.",
     websiteUrl: "https://www.shadcnblocks.com/",
+    githubRepo: "shadcnblocks/shadcn-ui-blocks",
     collection: "copy-paste",
     bestFor: "Page sections and starter layouts",
     framework: "React",
@@ -261,6 +334,7 @@ export const componentLibraries: ComponentLibrary[] = [
     description:
       "Copy-paste components built on Base UI for teams that want polished patterns with a modern primitive layer.",
     websiteUrl: "https://coss.com/ui",
+    githubRepo: "cosscom/coss",
     collection: "copy-paste",
     bestFor: "Base UI component composition",
     framework: "React",
@@ -421,21 +495,11 @@ export const componentLibraries: ComponentLibrary[] = [
     ownership: "Installed plugin",
   },
   {
-    name: "HyperUI",
-    description:
-      "Free, open-source Tailwind CSS components for quickly assembling responsive marketing and application interfaces.",
-    websiteUrl: "https://www.hyperui.dev/",
-    collection: "tailwind",
-    bestFor: "Free Tailwind sections",
-    framework: "HTML and frontend frameworks",
-    styling: "Tailwind CSS classes",
-    ownership: "Copy source into project",
-  },
-  {
     name: "TailGrids",
     description:
       "A collection of responsive Tailwind CSS components and blocks for landing pages, applications, and admin panels.",
     websiteUrl: "https://tailgrids.com/",
+    githubRepo: "TailGrids/tailgrids",
     collection: "tailwind",
     bestFor: "Responsive page blocks",
     framework: "HTML and frontend frameworks",

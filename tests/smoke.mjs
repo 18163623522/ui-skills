@@ -132,7 +132,7 @@ try {
   for (const marker of [
     "Best React component libraries for UI design",
     "Motion Primitives",
-    "Prompt Kit",
+    "prompt-kit",
     '"@type":"CollectionPage"',
   ]) {
     if (!componentsBody.includes(marker)) {
