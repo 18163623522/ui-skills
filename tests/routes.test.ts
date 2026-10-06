@@ -49,7 +49,7 @@ describe("route boundaries", () => {
       assert.match(
         body,
         new RegExp(
-          `https://www\\.ui-skills\\.com/components/${collection.slug}`,
+          `https://www\\.ui-skills\\.com/components/${collection.routeSlug}`,
         ),
       );
     }

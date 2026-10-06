@@ -4,6 +4,7 @@ import type { ComponentCollection } from "../data/component-libraries";
 
 type CollectionOption = {
   slug: ComponentCollection;
+  routeSlug: string;
   controlTitle: string;
   count: number;
 };
@@ -19,7 +20,7 @@ const { collections } = Astro.props as Props;
   {
     collections.map((collection) => (
       <Button
-        href={`/components/${collection.slug}`}
+        href={`/components/${collection.routeSlug}`}
         variant="secondary"
         size="sm"
       >

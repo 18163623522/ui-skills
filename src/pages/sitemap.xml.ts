@@ -66,7 +66,7 @@ export const GET: APIRoute = ({ site }) => {
     (collection) => `/collections/${collection.slug}`,
   );
   const componentCollectionRoutes = componentCollections.map(
-    (collection) => `/components/${collection.slug}`,
+    (collection) => `/components/${collection.routeSlug}`,
   );
   const playbookRoutes = playbook.map((entry) => `/playbook/${entry.slug}`);
   const agentRoutes = agents.map((agent) => `/agents/${agent.id}`);

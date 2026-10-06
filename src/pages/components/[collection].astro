@@ -12,7 +12,7 @@ import {
 
 export function getStaticPaths() {
   return componentCollections.map((collection) => ({
-    params: { collection: collection.slug },
+    params: { collection: collection.routeSlug },
     props: { collection },
   }));
 }
@@ -30,7 +30,7 @@ const breadcrumbItems = [
 ];
 const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
 const pageUrl = new URL(
-  `/components/${collection.slug}`,
+  `/components/${collection.routeSlug}`,
   siteOrigin,
 ).toString();
 const structuredData = [
@@ -59,7 +59,7 @@ const structuredData = [
       position: index + 1,
       name: item.label,
       item: new URL(
-        item.href ?? `/components/${collection.slug}`,
+        item.href ?? `/components/${collection.routeSlug}`,
         siteOrigin,
       ).toString(),
     })),
@@ -85,7 +85,7 @@ const structuredData = [
         <ComponentLibraryDirectory
           libraries={collectionLibraries}
           showCollectionHeaders={false}
-          client:load
+          client:idle
         />
 
         <RelatedDirectoryLinks

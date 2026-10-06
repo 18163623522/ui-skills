@@ -133,7 +133,7 @@ try {
     "React component libraries",
     "Motion Primitives",
     "prompt-kit",
-    'href="/components/production"',
+    'href="/components/react"',
     "Explore related directories",
     '"@type":"CollectionPage"',
   ]) {
@@ -142,7 +142,7 @@ try {
     }
   }
 
-  const productionComponents = await fetchLocal("/components/production");
+  const productionComponents = await fetchLocal("/components/react");
   if (productionComponents.status !== 200) {
     throw new Error(
       `Production components page returned ${productionComponents.status}`,

@@ -21,6 +21,7 @@ export type ComponentLibrary = {
 
 export const componentCollections: Array<{
   slug: ComponentCollection;
+  routeSlug: string;
   title: string;
   controlTitle: string;
   description: string;
@@ -30,6 +31,7 @@ export const componentCollections: Array<{
 }> = [
   {
     slug: "production",
+    routeSlug: "react",
     title: "React component libraries",
     controlTitle: "React",
     description:
@@ -42,6 +44,7 @@ export const componentCollections: Array<{
   },
   {
     slug: "primitives",
+    routeSlug: "primitives",
     title: "React primitives",
     controlTitle: "Primitives",
     description:
@@ -54,6 +57,7 @@ export const componentCollections: Array<{
   },
   {
     slug: "copy-paste",
+    routeSlug: "shadcn",
     title: "Copy-paste and shadcn components",
     controlTitle: "shadcn",
     description:
@@ -66,6 +70,7 @@ export const componentCollections: Array<{
   },
   {
     slug: "motion",
+    routeSlug: "motion",
     title: "Animated and creative components",
     controlTitle: "Motion",
     description:
@@ -78,6 +83,7 @@ export const componentCollections: Array<{
   },
   {
     slug: "tailwind",
+    routeSlug: "tailwind-css",
     title: "Tailwind CSS component libraries",
     controlTitle: "Tailwind CSS",
     description:
@@ -90,6 +96,7 @@ export const componentCollections: Array<{
   },
   {
     slug: "generative-ui",
+    routeSlug: "generative-ui",
     title: "Generative UI and AI components",
     controlTitle: "AI UI",
     description:

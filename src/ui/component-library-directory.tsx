@@ -43,7 +43,11 @@ export default function ComponentLibraryDirectory({
       <TooltipProvider>
         <div>
           {libraries.map((library) => (
-            <LibraryRow key={library.name} library={library} />
+            <LibraryRow
+              key={library.name}
+              library={library}
+              headingLevel="h2"
+            />
           ))}
         </div>
       </TooltipProvider>
@@ -79,7 +83,11 @@ export default function ComponentLibraryDirectory({
               </header>
               <div>
                 {collectionLibraries.map((library) => (
-                  <LibraryRow key={library.name} library={library} />
+                  <LibraryRow
+                    key={library.name}
+                    library={library}
+                    headingLevel="h3"
+                  />
                 ))}
               </div>
             </section>
@@ -90,7 +98,13 @@ export default function ComponentLibraryDirectory({
   );
 }
 
-function LibraryRow({ library }: { library: ComponentLibrary }) {
+function LibraryRow({
+  library,
+  headingLevel,
+}: {
+  library: ComponentLibrary;
+  headingLevel: "h2" | "h3";
+}) {
   const repository = library.githubRepo
     ? repositoryMetadata.repositories[library.githubRepo.toLowerCase()]
     : undefined;
@@ -106,6 +120,7 @@ function LibraryRow({ library }: { library: ComponentLibrary }) {
   const avatarLabel = library.githubRepo
     ? `Open ${library.name} on GitHub`
     : `Open ${library.name} website`;
+  const Heading = headingLevel;
 
   return (
     <article className="border-line-default flex items-start gap-3 border-b py-4 sm:items-center">
@@ -124,9 +139,16 @@ function LibraryRow({ library }: { library: ComponentLibrary }) {
 
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-          <h3 className="type-body-md text-content-primary truncate font-[450]">
-            {library.name}
-          </h3>
+          <Heading className="type-body-md text-content-primary truncate font-[450]">
+            <a
+              href={library.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {library.name}
+            </a>
+          </Heading>
           {displayStars && (
             <span
               className="type-body-sm text-content-muted inline-flex items-center gap-1"

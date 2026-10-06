@@ -17,9 +17,9 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Best icon libraries for UI design",
+    name: "React Icon Libraries",
     description:
-      "Compare free and open-source icon libraries for React, web apps, and modern UI design.",
+      "Compare free and open-source React icon libraries, including Lucide, Heroicons, Phosphor, and Tabler Icons.",
     url: pageUrl,
     mainEntity: {
       "@type": "ItemList",
@@ -47,8 +47,8 @@ const structuredData = [
 
 <Layout
   structuredData={structuredData}
-  title="Best Icon Libraries for UI Design | UI Skills"
-  description="Compare the best free and open-source icon libraries for React, web apps and modern UI design."
+  title="React Icon Libraries | UI Skills"
+  description="Compare the best free and open-source React icon libraries, including Lucide, Heroicons, Phosphor, and Tabler Icons."
 >
   <div class="relative flex min-h-dvh flex-col items-center justify-start">
     <div class="container-3xl relative mt-20">
@@ -56,20 +56,18 @@ const structuredData = [
         <Breadcrumbs items={breadcrumbItems} />
 
         <div class="flex flex-col gap-3">
-          <h1 class="type-h1 text-content-primary">
-            Icon libraries for UI design
-          </h1>
+          <h1 class="type-h1 text-content-primary">React icon libraries</h1>
           <p class="type-body-md text-content-secondary">
-            Find free icons and React icon libraries for web apps and product
-            design. Browse open-source sets and choose the right one for your
-            project.
+            Find open-source React icon libraries for web apps and product
+            interfaces, including Lucide, Heroicons, Phosphor, Tabler Icons, and
+            more.
           </p>
         </div>
 
         <section aria-labelledby="library-list-title">
           <h2 id="library-list-title" class="sr-only">Icon libraries</h2>
           <div>
-            <IconLibraryDirectory libraries={iconLibraries} client:load />
+            <IconLibraryDirectory libraries={iconLibraries} client:idle />
           </div>
         </section>
         <RelatedDirectoryLinks
